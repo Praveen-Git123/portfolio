@@ -2,7 +2,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     const words = [
         "AI Developer",
-        "Android Developer",
+        "Android App Developer",
         "MIT App Inventor Developer",
         "Python Learner"
     ];
