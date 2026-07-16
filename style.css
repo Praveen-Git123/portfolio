@@ -286,3 +286,38 @@ font-size:14px;
 letter-spacing:1px;
 
 }
+/* ===========================
+   Animated Roles
+=========================== */
+
+.roles{
+
+    margin-bottom:35px;
+
+}
+
+.roles p{
+
+    color:#00E5FF;
+
+    font-size:26px;
+
+    font-weight:bold;
+
+    margin:10px 0;
+
+    opacity:0;
+
+    transform:translateY(15px);
+
+    transition:all .8s ease;
+
+}
+
+.roles p.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
