@@ -127,11 +127,13 @@ nav ul li a:hover{
 
 .hero h2{
 
-    color:#7C4DFF;
+color:#7C4DFF;
 
-    margin-bottom:20px;
+font-size:36px;
 
-    font-size:35px;
+margin-bottom:25px;
+
+min-height:45px;
 
 }
 
@@ -259,5 +261,28 @@ font-size:18px;
 flex-direction:column;
 
 }
+
+}
+/* Badge */
+
+.badge{
+
+padding:10px 22px;
+
+border:1px solid #00E5FF;
+
+border-radius:30px;
+
+margin-bottom:30px;
+
+color:#00E5FF;
+
+background:rgba(0,229,255,.08);
+
+box-shadow:0 0 20px rgba(0,229,255,.12);
+
+font-size:14px;
+
+letter-spacing:1px;
 
 }
