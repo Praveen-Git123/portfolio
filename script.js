@@ -1,53 +1,24 @@
 window.addEventListener("DOMContentLoaded", () => {
 
-    const words = [
-        "AI Developer",
-        "Android App Developer",
-        "MIT App Inventor Developer",
-        "Python Learner"
+    const roles = [
+        "🤖 AI Developer",
+        "📱 Android Developer",
+        "💻 MIT App Inventor Developer",
+        "🐍 Python Learner"
     ];
 
-    let wordIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
+    roles.forEach((role, index) => {
 
-    const typing = document.getElementById("typing");
+        setTimeout(() => {
 
-    function typeEffect() {
+            const element = document.getElementById("role" + (index + 1));
 
-        const currentWord = words[wordIndex];
+            element.textContent = role;
 
-        if (!isDeleting) {
+            element.classList.add("show");
 
-            typing.textContent = currentWord.substring(0, charIndex++);
+        }, index * 900);
 
-            if (charIndex > currentWord.length) {
-
-                isDeleting = true;
-
-                setTimeout(typeEffect, 1200);
-
-                return;
-            }
-
-        } else {
-
-            typing.textContent = currentWord.substring(0, charIndex--);
-
-            if (charIndex < 0) {
-
-                isDeleting = false;
-
-                wordIndex = (wordIndex + 1) % words.length;
-
-            }
-
-        }
-
-        setTimeout(typeEffect, isDeleting ? 50 : 100);
-
-    }
-
-    typeEffect();
+    });
 
 });
